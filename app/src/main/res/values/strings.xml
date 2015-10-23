@@ -3,4 +3,5 @@
     <string name="hint_name">اسم المستخدم</string>
     <string name="hint_email">البريد الالكتروني</string>
     <string name="hint_password">كلمة المرور</string>
+    <string name="url">http://10.0.3.2:8888/android_retrofit/</string>
 </resources>

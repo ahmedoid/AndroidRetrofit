@@ -7,7 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.tatbigy.androidretrofit.model.Results;
 
 import retrofit.Call;
 import retrofit.Callback;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         submit = (Button) findViewById(R.id.btn_signup);
 
         final Retrofit registration = new Retrofit.Builder().
-                baseUrl("http://10.0.3.2:8888/android_retrofit/")
+                baseUrl(getString(R.string.url))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
            submit.setOnClickListener(new View.OnClickListener() {

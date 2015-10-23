@@ -1,4 +1,4 @@
-package com.tatbigy.androidretrofit;
+package com.tatbigy.androidretrofit.model;
 
 /**
  * Created by Ahmed on 10/4/15.

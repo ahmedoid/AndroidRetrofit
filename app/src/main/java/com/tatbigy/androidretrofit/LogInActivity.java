@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.tatbigy.androidretrofit.model.LogInResult;
+
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.GsonConverterFactory;
@@ -45,7 +47,7 @@ public class LogInActivity extends AppCompatActivity {
         this.inputemail = (EditText) findViewById(R.id.input_email);
 
         final Retrofit Retrofitlogin = new Retrofit.Builder().
-                baseUrl("http://10.0.3.2:8888/android_retrofit/")
+                baseUrl(getString(R.string.url))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         btnsignup.setOnClickListener(new View.OnClickListener() {

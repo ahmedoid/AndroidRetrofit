@@ -1,4 +1,4 @@
-package com.tatbigy.androidretrofit;
+package com.tatbigy.androidretrofit.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -22,7 +22,7 @@ public class LogInResult implements Parcelable {
     private int code;
     private String message;
     private String name;
-    private Object id_user;
+    private String id_user;
     private String email;
 
     protected LogInResult(Parcel in) {
@@ -56,7 +56,7 @@ public class LogInResult implements Parcelable {
         this.name = name;
     }
 
-    public void setId_user(Object id_user) {
+    public void setId_user(String id_user) {
         this.id_user = id_user;
     }
 
@@ -76,7 +76,7 @@ public class LogInResult implements Parcelable {
         return name;
     }
 
-    public Object getId_user() {
+    public String getId_user() {
         return id_user;
     }
 
@@ -95,5 +95,7 @@ public class LogInResult implements Parcelable {
         parcel.writeString(message);
         parcel.writeString(name);
         parcel.writeString(email);
+        parcel.writeString(id_user);
+
     }
 }
